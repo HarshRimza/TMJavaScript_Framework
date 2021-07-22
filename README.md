@@ -22,7 +22,7 @@ For Example :
 <td>{{{e.salary}}}</td>
 </tr>
 ```
-In above code 's.no.' is case-sensitive for serial number and id, name, gender, salary are the properties of 
+In above code 's.no.' is case-sensitive for serial number and id, name, gender, salary are the properties of the object in the list named employees, where employees is the property persent in the Model.
 
 
 
