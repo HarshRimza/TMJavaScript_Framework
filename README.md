@@ -2,7 +2,7 @@
 A Small JavaScript Framework based on MVC Concept. This framework allows the features like
 
 * Write `{{{property_name_of_your_model}}}` wherever you want in the body tag of your html.
-* Binding those tags which have value attribute with the property of Model. Just put `tm-bind='property_name_of_your_model'` in the tag.
+* Binding those tags which have value attribute with the property of Model. Just put `tm-bind='property_name_of_your_model'` in the tag. So, whatever you feed in the input field the value will be directly assigned to the `property_name` written against `tm-bind` in the tag.
 * Set the display of tags using if condition support. Just put `tm-if="property_name_of_your_model=='whatever_value'"` in the tag.
 * Draw multiple tag using for loop support. Just put `tm-for='x=1 to 5 step=1'` in the tag you want to repeat with `{{{x}}}` in the textarea of tag where you want. <br>
 For Example : 
@@ -25,14 +25,15 @@ For Example :
 In above code 's.no.' is case-sensitive for serial number and id, name, gender, salary are the properties of the object in the list named employees, where employees is the property persent in the Model.
 
 
-
+### Test Case for all above points
+Just put the framework.js file into the js folder of your project directory, copy-paste the below test code into whatever file you want of project directory, start the server and type `http://localhost:whatever_port/your_project_directory/this_test_file_name` into the address bar of browser. For triggering the observer you need to click on the Traverse button in the html.
 ```
 <!DOCTYPE html>
 <html lang='en'>
 <head>
 <meta charset='utf-8'>
 <title>set model test case</title>
-<script src="/ajax-examples/framework.js"></script>
+<script src="/js/framework.js"></script>
 
 <script>
 function Employee(name,id,salary,gender)
