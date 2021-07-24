@@ -33,7 +33,7 @@ Just put the framework.js file into the js folder of your project directory, cop
 <head>
 <meta charset='utf-8'>
 <title>set model test case</title>
-<script src="/js/framework.js"></script>
+<script src="js/framework.js"></script>
 
 <script>
 function Employee(name,id,salary,gender)
