@@ -6,14 +6,14 @@ A Small JavaScript Framework based on MVC Concept. This framework allows the fea
 * Set the display of tags using if condition support. Just put `tm-if="property_name_of_your_model=='whatever_value'"` in the tag.
 * Draw multiple tag using for loop support. Just put `tm-for='x=1 to 5 step=1'` in the tag you want to repeat with `{{{x}}}` in the textarea of tag where you want. <br>
 For Example : 
-```
+```html
 <span tm-for='x=1 to 5 step=1'>
  tm-for 2 'x=1 to 5 step=1' {{{x}}}<br>
 </span>
 ```
 * Fill data to the tag using same for loop support. Just put `tm-for="e in employees"` in the tr tag or in whatever tag you want.<br>
 For Example : 
-```
+```html
 <tr tm-for="e in employees">
 <td>{{{s.no.}}}</td>
 <td>{{{e.id}}}</td>
@@ -27,7 +27,7 @@ In above code 's.no.' is case-sensitive for serial number and id, name, gender, 
 
 ### Test Case for all above points
 Just put the framework.js file into the js folder of your project directory, copy-paste the below test code into whatever file you want of project directory, start the server and type `http://localhost:whatever_port/your_project_directory/this_test_file_name` into the address bar of browser. For triggering the observer you need to click on the Traverse button in the html.
-```
+```html
 <!DOCTYPE html>
 <html lang='en'>
 <head>
